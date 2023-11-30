@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the property list */
+.property-list {
+  display: block;
+  background-color: aliceblue;
+ 
+  
+ 
+}
+#list_container{
+	display: flex;
+	flex-direction:column ;
+}
+
+/* Style for each property card */
+.property-cardo  {
+  width: 1250px;
+  margin: 10px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 50%;
+  overflow: hidden;
+  
+ 
+}
+
+/* Style for the property images slider */
+
+
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.5s ease;
+}
+
+
+/* Style for navigation buttons */
+.prev1, .next1 {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 50%;
+  font-size: 20px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev1:hover, .next1:hover {
+  background-color: #555;
+}
+
+/* Style for dots indicating image position */
+.dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.property-list{
+	display: flex;
+}
